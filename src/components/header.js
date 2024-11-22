@@ -4,12 +4,7 @@ import iconCart from '../assets/images/iconCart.png'
 import { useSelector, useDispatch } from 'react-redux' 
 import { toggleStatusTab } from '../stores/cart'
 
-export const links = [
-  { id: 1, href: '/', text: 'home' },
-  { id: 2, href: '/about', text: 'about' },
-  { id: 3, href: '/services', text: 'services' },
-  
-];
+
 
 const Header = () => {
     const [totalQuantity, setTotalQuantity] = useState(0);
@@ -26,23 +21,18 @@ const Header = () => {
   return (
     <header className='flex justify-between items-center mb-5'>
         <Link to="/" className='text-xl font-semibold'> <h2 className='text-3xl font-bold'>
-          Rudy`s<span className='text-[#966fb3] px-4'>Consulting</span>
+          Rudy's<span className='text-[#966fb3] px-2'>Consulting</span>
         </h2></Link>
-        <div className='flex gap-x-3'>
-          {links.map((link) => {
-            const { id, href, text } = link;
-            return (
-              <a
-                key={id}
-                href={href}
-                className='capitalize text-lg tracking-wide hover:text-emerald-600 duration-300'
-              >
-                {text}
-              </a>
-            );
-          })}
+
+        <div className='grid gap-4 grid-cols-3'>
+         
+        <Link to='/' className='rounded-xl uppercase text-lg tracking-wider p-2 hover:bg-[#966fb3] duration-300'>home</Link>
+          <Link to='/about' className='rounded-xl uppercase text-lg tracking-wider p-2 hover:bg-[#966fb3] duration-300'>about</Link>
+          <Link to='/services' className='rounded-xl uppercase text-lg tracking-wider p-2 hover:bg-[#966fb3] duration-300'>services</Link>
+         
         </div>
-        <div className='w-11 h-11 bg-sky-300 rounded-full
+        
+        <div className='w-11 h-11 hover:bg-[#966fb3] rounded-full
         flex justify-center items-center relative' onClick={handleOpenTabCart}>
             <img src={iconCart} alt="" className='w-6'/>
             <span className='absolute top-2/3 right-1/2 bg-red-500 text-white text-sm

@@ -11,11 +11,11 @@ const CartTab = () => {
         dispatch(toggleStatusTab());
     }
   return (
-    <div className={`fixed top-0 right-0 bg-gray-700 shadow-2xl w-96 h-full grid grid-rows-[60px_1fr_60px] 
+    <div className={`fixed top-0 right-0 border-l-4 border-sky-800 bg-sky-200 shadow-2xl w-96 h-full grid grid-rows-[60px_1fr_60px] 
     transform transition-transform duration-500
     ${statusTab === false ? "translate-x-full" : ""}
     `}>
-        <h2 className='p-5 text-white text-2xl'>Shopping Cart</h2>
+        <h2 className='p-5 text-2xl'>Shopping Cart</h2>
         <div className='p-5'>
             {carts.map((item, key) => 
                 <CartItem key={key} data={item}/>
@@ -23,7 +23,7 @@ const CartTab = () => {
         </div>
         <div className='grid grid-cols-2'>
             <button className='bg-black text-white' onClick={handleCloseTabCart}>CLOSE</button>
-            <button className='bg-amber-600 text-white'>CHECKOUT</button>
+            <button className='bg-[#966fb3] text-white'>CHECKOUT</button>
         </div>
     </div>
   )
