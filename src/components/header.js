@@ -5,7 +5,6 @@ import { useSelector, useDispatch } from 'react-redux'
 import { toggleStatusTab } from '../stores/cart'
 
 
-
 const Header = () => {
     const [totalQuantity, setTotalQuantity] = useState(0);
     const carts = useSelector(store => store.cart.items);
@@ -28,7 +27,7 @@ const Header = () => {
          
         <Link to='/' className='rounded-xl uppercase text-lg tracking-wider p-2 hover:bg-[#966fb3] duration-300'>home</Link>
           <Link to='/about' className='rounded-xl uppercase text-lg tracking-wider p-2 hover:bg-[#966fb3] duration-300'>about</Link>
-          <Link to='/services' className='rounded-xl uppercase text-lg tracking-wider p-2 hover:bg-[#966fb3] duration-300'>services</Link>
+          <Link to='/services' className='rounded-xl uppercase text-lg tracking-wider p-2 hover:bg-[#966fb3] duration-300'  >services</Link>
          
         </div>
         

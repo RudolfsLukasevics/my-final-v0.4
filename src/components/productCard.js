@@ -4,7 +4,7 @@ import iconCart from '../assets/images/iconCart.png'
 import { useSelector, useDispatch } from 'react-redux';
 import { addToCart } from '../stores/cart';
 
-const ProductCart = (props) => {
+const ProductCard = (props) => {
     const carts = useSelector(store => store.cart.items);
     const {id, name, price, image, slug} = props.data;
     const dispatch = useDispatch();
@@ -34,4 +34,4 @@ const ProductCart = (props) => {
   )
 }
 
-export default ProductCart
+export default ProductCard
