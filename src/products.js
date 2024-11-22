@@ -17,15 +17,15 @@ export const products = [
         name: 'Consulting Services',
         price: 30,
         image: imageProduct2,
-        description: 'Mollit anim consectetur adipisicing aute pariatur ad mollit ad. Officia amet aliqua non laborum dolore sint sit eu sit sunt laboris. Dolor tempor ipsum culpa Lorem ipsum ullamco ullamco dolor sit do. Do proident quis ad laborum et proident laborum. Non voluptate eiusmod aute labore ea aute.',
+        description: 'Hourly service that provides client with options to improve energy systems',
         slug: 'consulting-services-slug'
     },
     {
         id: 3,
-        name: 'Design Services',
+        name: 'Design Services ',
         price: 50,
         image: imageProduct3,
-        description: 'Mollit anim consectetur adipisicing aute pariatur ad mollit ad. Officia amet aliqua non laborum dolore sint sit eu sit sunt laboris. Dolor tempor ipsum culpa Lorem ipsum ullamco ullamco dolor sit do. Do proident quis ad laborum et proident laborum. Non voluptate eiusmod aute labore ea aute.',
+        description: 'Hourly service that provides client with comprehensive designs fro their energy systems',
         slug: 'design-services-slug'
     },
     {
@@ -33,7 +33,7 @@ export const products = [
         name: 'Consulting & Design Services',
         price: 70,
         image: imageProduct4,
-        description: 'Mollit anim consectetur adipisicing aute pariatur ad mollit ad. Officia amet aliqua non laborum dolore sint sit eu sit sunt laboris. Dolor tempor ipsum culpa Lorem ipsum ullamco ullamco dolor sit do. Do proident quis ad laborum et proident laborum. Non voluptate eiusmod aute labore ea aute.',
+        description: 'Hourly service that provides client with options to improve energy systems and comprehensive designs of those',
         slug: 'consulting-design-services-slug'
     },
     

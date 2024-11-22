@@ -4,6 +4,13 @@ import iconCart from '../assets/images/iconCart.png'
 import { useSelector, useDispatch } from 'react-redux' 
 import { toggleStatusTab } from '../stores/cart'
 
+export const links = [
+  { id: 1, href: '/', text: 'home' },
+  { id: 2, href: '/about', text: 'about' },
+  { id: 3, href: '/services', text: 'services' },
+  
+];
+
 const Header = () => {
     const [totalQuantity, setTotalQuantity] = useState(0);
     const carts = useSelector(store => store.cart.items);
@@ -19,8 +26,22 @@ const Header = () => {
   return (
     <header className='flex justify-between items-center mb-5'>
         <Link to="/" className='text-xl font-semibold'> <h2 className='text-3xl font-bold'>
-          Rudy`s<span className='text-emerald-600 px-4'>Consulting</span>
+          Rudy`s<span className='text-[#966fb3] px-4'>Consulting</span>
         </h2></Link>
+        <div className='flex gap-x-3'>
+          {links.map((link) => {
+            const { id, href, text } = link;
+            return (
+              <a
+                key={id}
+                href={href}
+                className='capitalize text-lg tracking-wide hover:text-emerald-600 duration-300'
+              >
+                {text}
+              </a>
+            );
+          })}
+        </div>
         <div className='w-11 h-11 bg-sky-300 rounded-full
         flex justify-center items-center relative' onClick={handleOpenTabCart}>
             <img src={iconCart} alt="" className='w-6'/>
