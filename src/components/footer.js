@@ -1,6 +1,6 @@
 import React from 'react'
 import SectionTitle from './sectionTitle'
-import { FaRegCopyright } from "react-icons/fa6";
+
 
 
 const footer = () => {

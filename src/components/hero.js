@@ -1,5 +1,5 @@
 import heroImg from '../assets/images/undraw_segment_analysis_re_ocsl.svg';
-import { FaGithubSquare, FaLinkedin, FaTwitterSquare } from 'react-icons/fa';
+import { FaLinkedin} from 'react-icons/fa';
 
 const Hero = () => {
   return (

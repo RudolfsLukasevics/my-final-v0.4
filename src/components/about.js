@@ -1,6 +1,5 @@
 import SectionTitle from './sectionTitle';
 import { IoSchoolOutline } from "react-icons/io5";
-import { TbTools } from "react-icons/tb";
 import { VscTools } from "react-icons/vsc";
 
 
