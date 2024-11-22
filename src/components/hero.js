@@ -21,7 +21,7 @@ const Hero = () => {
           </div>
         </article>
         <article className='hidden md:block'>
-          <img src={heroImg} className='h-80 lg:h-96' />
+          <img src={heroImg} className='h-80 lg:h-96' alt='image of a person looking over pie chart' />
         </article>
       </div>
     </div>
