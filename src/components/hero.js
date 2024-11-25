@@ -11,7 +11,7 @@ const Hero = () => {
             Energy Consultant
           </p>
           <p className='mt-2 text-lg text-slate-700 capitalize tracking-wide'>
-            making communities more independent
+            making communities independent
           </p>
           <div className='flex gap-x-4 mt-4'>
             <a href='https://www.linkedin.com/in/rudolfs-lukasevics/'>
