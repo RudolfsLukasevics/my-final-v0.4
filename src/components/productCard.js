@@ -1,11 +1,11 @@
 import React from 'react' 
 import { Link } from 'react-router-dom';
 import iconCart from '../assets/images/iconCart.png'
-import { useSelector, useDispatch } from 'react-redux';
+import {  useDispatch } from 'react-redux';
 import { addToCart } from '../stores/cart';
 
 const ProductCard = (props) => {
-    const carts = useSelector(store => store.cart.items);
+    //const carts = useSelector(store => store.cart.items);
     const {id, name, price, image, slug} = props.data;
     const dispatch = useDispatch();
     const handleAddToCart = () => {
